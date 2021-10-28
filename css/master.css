@@ -32,7 +32,8 @@ header {
   text-align: center;
   background-image: url('../assests/firehearts.JPG');
   background-size: cover;
-  padding: 210px 100px;
+  background-position: center;
+  padding: 210px 150px;
 }
 .text_box {
   background-color: lightgrey;
