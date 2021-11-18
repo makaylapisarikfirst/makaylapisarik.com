@@ -10,6 +10,7 @@ align-items: center;
 color: white;
 padding: 30px;
 }
+
 .header_left  {
   padding-left: 15px;
 }
@@ -19,6 +20,7 @@ padding: 30px;
 }
 
 .logo {
+  margin-left: 100px;
   width: 30%;
   background-color: white;
   border-radius: 50%;
@@ -31,8 +33,6 @@ nav {
   background-color: black;
   border-top: 5px solid #25E8E5;
   border-bottom: 5px solid #25E8E5;
-
-
 }
 .navbar{
   list-style-type: none;
@@ -68,11 +68,19 @@ footer {
   background-color: #25E8E5;
   text-align: center;
 }
+@media only screen and (max-width:768px)  {
+  .header_center {
+    font-size: 20pt;
+  }
+  .navbar a{
+    font-size: 18pt;
+  }
+}
 /*Home Page Stylization*/
 .home_title {
   padding-top: 5px;
   text-align: center;
-  font-size: 20pt;
+  font-size: 40pt;
 }
 .home_img {
   width: 50%;
@@ -82,6 +90,7 @@ footer {
   border-radius: 50%;
 }
 .contact {
+  font-weight: bolder;
   background-color: #E8980E;
 }
 .home_title {
@@ -118,6 +127,12 @@ footer {
   padding-top: 10px;
   padding-bottom: 20px;
   background-color:black;
+}
+
+button {
+  width:100px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 /* Contact Page Stylization */
@@ -199,9 +214,9 @@ footer {
 .grid_container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
-  padding: 15px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  padding: 30px;
   align-items: center;
   width: 100%
 }
@@ -218,5 +233,7 @@ footer {
   margin: auto;
   border-radius: 50%;
   padding: 40px;
+
+
 
 }
