@@ -8,7 +8,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 color: white;
-padding: 10px;
+padding: 30px;
 }
 .header_left  {
   padding-left: 15px;
@@ -24,9 +24,14 @@ padding: 10px;
   border-radius: 50%;
 }
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
   background-color: black;
-  border-top: 3px solid #25E8E5;
-  border-bottom: 3px solid #25E8E5;
+  border-top: 5px solid #25E8E5;
+  border-bottom: 5px solid #25E8E5;
+
 
 }
 .navbar{
@@ -38,6 +43,7 @@ nav {
 }
 .navbar a {
   color: white;
+  font-size: 18pt;
   text-decoration: none;
   padding-right: 30px;
   padding-left: 30px;
@@ -47,7 +53,7 @@ nav {
   color: #25E8E5;
 }
 .navbar li:hover {
-  border: 2px solid #25E8E5;
+  border: 4px solid #25E8E5;
 }
 main {
   color: white;
