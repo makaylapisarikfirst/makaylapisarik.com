@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="./css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -23,8 +24,34 @@
     </nav>
     <main>
       <section class="contact_me">
-      <p class="contact_me">Contact Me Today:<p>
-        <button class="contact" href="./form.html">Contact</button>
+        <div class="form_container">
+          <form>
+            <h1 id="form_title" >Contact Me Today:</h1>
+            <fieldset>
+              <legend id="who_you_are" > Who You ARe: </legend>
+              <input  type="text" name="first_name">
+              <label id="name" for="first_name">First Name</label>
+              <input  type="text" name="last_name">
+              <label id="name"  for="last_name">Last Name</label>
+            </fieldset>
+            
+              <label id="how-to" for="how_to_contact">How would you like me to contact you back?</label>
+              <br></br>
+        <input  type="radio" name="how_to_contact" value="Email"/> Email
+        <input type="radio" name="how_to_contact" value="Phone"/> Phone #
+        <input type="radio" name="how_to_contact" value="both"/> Both
+        <br></br>
+        <legend id="Email-or-phone-text" >Write down your Email and/or Phone number:</lengend>
+          <br></br>
+          <input type="text" name="contact_info">
+          <label for="contact_info" name="contacts"></legend>
+            <br></br>
+              <label  for="reason" id="how-to-help" >How Can I Help You?</label>
+              <textarea name="reason" for="reason" rows="12">Message...</textarea>
+                <input id="submit" type="submit" name="submit" value"Lets Go">
+
+          </form>
+        </div>
       </section>
       <ul class="contacts">
         <li>Linkin:<a href="#">Makaylapisarik@linkin</a></li>
