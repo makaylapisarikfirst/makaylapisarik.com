@@ -163,7 +163,6 @@ footer {
 
 
 /* Contact Page Stylization */
-
 .contacts {
   list-style-type: none;
   padding: 50px 20px;
@@ -190,6 +189,107 @@ footer {
   text-align: right;
 }
 
+/* contacts form stylization */
+#form_title {
+  text-align: center;
+  padding:20px;
+  background-color: white;
+  border-radius: 3px;
+  color: black;
+  text-decoration: underline;
+  border: 3px solid #E8980E;
+  box-shadow: 5px 5px 2px 2px #E8980E;
+  margin: 40px;
+}
+form {
+  padding: 100px;
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+input [type="text"] {
+  color: blue;
+}
+legend {
+  padding:10px;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px rgb(103, 101, 108);
+  border-radius: 30%;
+}
+fieldset {
+  margin: 80px;
+padding: 20px;
+background-color: white;
+border: 3px solid #25E8E5;
+box-shadow: 2px 2px 5px 5px #21CFCC;
+border-radius: 3px;
+margin-bottom: 100px;
+}
+textarea {
+  margin:10%;
+  width: 75%;
+  text-align: center;
+  border-radius: 3px;
+  background-color: white;
+  border: 3px solid #25E8E5;
+  box-shadow: 2px 2px 5px 5px #21CFCC;
+}
+#who_you_are {
+  border: 3px solid #E8980E;
+  box-shadow: 2px 2px 2px 2px #E8980E;
+}
+#name {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  padding-right: 20px;
+}
+#how-to {
+  font-family: 'Merriweather' serif;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  padding:50px;
+  border: 3px solid #E8980E;
+  box-shadow: 5px 5px 2px 2px #E8980E;
+}
+
+#Email-or-phone-text {
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  border: 3px solid #25E8E5;
+  box-shadow: 2px 2px 5px 5px #21CFCC
+}
+#how-to-help{
+  font-family: 'Merriweather' serif;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+  color: black;
+  padding:30px;
+  border: 3px solid #E8980E;
+  box-shadow: 5px 5px 2px 2px #E8980E;
+}
+input [type=reason] {
+  font-family: 'Merriweather' serif;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  color: black;
+  padding:30px;
+  border: 3px solid #E8980E;
+  box-shadow: 5px 5px 2px 2px #E8980E;
+}
+
+#submit {
+  background-color: #E8980E;
+  color: black;
+  font-size: 16pt;
+}
 
 /* Portfolio Page Stylization*/
 .portfolio_grid {
