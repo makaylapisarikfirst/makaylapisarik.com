@@ -1,14 +1,15 @@
 * {
   margin: 0;
   background-color: black;
+  box-sizing: border-box;
 }
 /* top page stylization */
 header {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 color: white;
-padding: 30px;
+padding: 60px;
 }
 
 .header_left  {
@@ -19,9 +20,11 @@ padding: 30px;
   width:75%;
   text-align: center;
 }
-
+.header_center h1 {
+  font-size: 50px;
+}
 .logo {
-  margin-left: 100px;
+  margin-left: 20px;
   width: 30%;
   background-color: white;
   border-radius: 50%;
@@ -34,28 +37,24 @@ nav {
   background-color: black;
   border-top: 5px solid #25E8E5;
   border-bottom: 5px solid #25E8E5;
+
 }
-.navbar{
-  list-style-type: none;
-}
-.navbar li {
+
+nav li {
  display: inline-block;
+  list-style-type: none;
  padding: 10px;
- border: 4px solid #;
+ font-size: 18pt;
 }
-.navbar a {
+nav a {
   color: white;
-  font-size: 18pt;
   text-decoration: none;
-  padding-right: 30px;
-  padding-left: 30px;
   font-family: 'Merriweather' serif;
 }
-.navbar a:hover {
+nav a:hover {
   color: #25E8E5;
-}
-.navbar li:hover {
-  border: 4px solid #25E8E5;
+  border: 5px solid #25E8E5;
+  padding: 8px;
 }
 main {
   color: white;
@@ -84,6 +83,7 @@ footer {
   padding: 25px;
   border-radius: 50%;
 }
+
 .contact {
   font-weight: bolder;
   background-color: #E8980E;
@@ -94,54 +94,80 @@ footer {
   padding-bottom: 20px;
   font-family: 'Merriweather' serif;
 }
+.home-container{
+  display: flex;
+  margin:auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 .home_grid {
   padding: 50px;
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 2px;
   grid-row-gap: 2px;
-  padding: 15px;
   align-items: center;
-  width: 100%;
-  border-radius: 50%
+  width: 85%;
+  border-radius: 35%
+}
+.home_img_work_left{
+  width:85%;
+  text-align: left;
+  padding-bottom: 100px;
+}
+.home_img_work_right{
+  width:85%;
+  text-align: right;
+  padding-top:100px;
 }
 .discription a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
   font-family: 'Inter' serif;
-  color: #E8980E;
   text-decoration: none;
+  padding: 22px;
+  font-size: 16pt;
+   color: #25E8E5;
 }
 .discription a:hover {
   font-family: 'Inter' serif;
-  color: #E8483C;
-  border-bottom: 2px solid #E8483C;
+  color: #36B54A;
+  padding:20px;
+  border-bottom: 2px solid #36B54A;
+  border-top: 2px solid #36B54A;
 }
 .contact_me_home {
   font-family: 'Merriweather' serif;
   color: white;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 100px;
   background-color:black;
 }
-
-button {
-  width:100px;
-  height: 50px;
-  border-radius: 5px;
+.contact_me{
+  padding-bottom:30px;
 }
+.contact_me_home a {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #E8980E;
+  border: 2px solid #E8980E;
+  border-radius: 5px;
+  text-decoration: none;
+  color:black;
+
+}
+
 
 /* Contact Page Stylization */
-.contact_me {
-  font-family: 'Merriweather' serif;
-  color: white;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  background-color:black;
-}
+
 .contacts {
   list-style-type: none;
   padding: 50px 20px;
+  padding-top: 100px;
 }
 .contacts a {
   font-family: 'Merriweather' serif;
@@ -151,6 +177,9 @@ button {
 .contacts li {
   display: column;
   padding-bottom: 80px;
+  font-size: 15pt;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .contacts a:hover {
   font-family: 'Merriweather' serif;
@@ -163,43 +192,69 @@ button {
 
 
 /* Portfolio Page Stylization*/
-.portfolio_img {
-  display: block;
-  margin: auto;
-  width: 75%;
-  border-radius: 50%;
-  display: block;
-  padding: 10px;
+.portfolio_grid {
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.portfolio_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  width: 85%;
+  padding:20px;
+}
+
+.portfolio_img_round {
+  width: 55%;
+  border-radius: 50%;
+}
+.portfolio_img {
+  width: 55%;
 }
 .title {
   text-align: center;
-  font-size: 15pt;
+  font-size: 35pt;
   font-family: 'Merriweather' serif;
+  padding-top: 60px;
 }
 .discription {
   font-family: 'Inter' serif;
   text-align: center;
   padding: 20px 40px;
+  font-size: 15pt;
 }
 .portfolio_action {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
   text-align: center;
 }
 .portfolio_action a {
   font-family: 'Merriweather' serif;
   text-decoration: none;
-   color: #25E8E5;}
+   color: #25E8E5;
+   padding:10px;
+   border-bottom: 2px solid #25E8E5;
+   border-top: 2px solid #25E8E5;
+ }
 
 .portfolio_action a:hover {
   font-family: 'Merriweather' serif;
   text-decoration: none;
-   color: #E8483C;
+   color: #36B54A;
+   padding:10px;
+   border-bottom: 2px solid #36B54A;
+   border-top: 2px solid #36B54A;
 }
-.portfolio_action:hover {
-  border-bottom: 2px solid #25E8E5;
-  border-top: 2px solid #25E8E5;
-}
+/* .portfolio_action:hover {
+  border-bottom: 2px solid #36B54A;
+  border-top: 2px solid #36B54A;
+} */
 /*Photoshoot Page Stylization*/
 .photoshoot_img {
   width: 75%;
@@ -213,6 +268,7 @@ button {
   grid-row-gap: 5px;
   padding: 30px;
   align-items: center;
+  justify-content: center;
   width: 100%
 }
 .photoshoot_lrg {
@@ -221,15 +277,160 @@ button {
   margin: auto;
   padding: 10px;
 }
+.portfolio_img_small{
+  width:35%;
+}
 /*About Page Stylization*/
 .about_img {
-  width: 85%;
+  width: 50%;
   display: block;
   margin: auto;
   border-radius: 50%;
   padding: 40px;
 }
+.about_discription{
+  padding: 15%;
+  text-align: center;
+}
+/*Mode Home Stylization */
+.mode-home {
+  display: block;
+  margin: auto;
+  width:55%;
+  align-items: center;
+  padding: 30px;
+}
+/*EXCUDE Fashion Stylization */
+ .excude-container{
+   display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+}
+.excude-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding-left:20px;
+  padding-right:20px;
+}
+.excude-image-left {
+  width:55%;
+  align-items: left;
+  padding-bottom: 100px;
+  padding-right:5px;
+}
+.excude-image-right {
+  width:55%;
+  align-items: right;
+  padding-top:100px;
+  padding-left:5px;
+}
+/*Organic Honey Website Wireframe */
+.honey-wire-container{
+  display: flex;
+  margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:  flex-start;
+  width:95%;
+}
+.honey-col{
+  display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+.honey-row-left{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom:55px;
+}
+.honey-pic-info{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+
+}
+.honey-row-right{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom:55px;
+}
+.honey-pic{
+  width: 55%;
+  padding:10px;
+}
+.honey-title{
+  padding-top: 30px;
+}
+.honey-large{
+  width: 65%;
+  padding:20px;
+}
+/*Organic Honey App Stylization */
+.organic-app-pic-container{
+  display: flex;
+  margin:auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:55%
+}
+.honey-app-pic{
+  padding-top:30px;
+  width:50%;
+}
+.app-title-discription{
+  display: flex;
+  margin: auto;
+  text-align: center;
+  padding:40px;
+  padding-bottom: 60px;
+  font-size: 15pt;
+}
+.app-discription{
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding:30px;
+  text-align: center;
+  font-size: 16pt;
+}
+.honey-app-vid{
+  width:55%;
+  padding-top:40px;
+  padding-bottom: 50px;
+}
+.honey-app-screenshot-container{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top:300px;
+  width:100%;
+}
 @media only screen and  (max-width:768px) {
+  /*Navigation Customization*/
+  nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  nav li {
+    display:block;
+    padding:10px;
+  }
+  nav a:hover{
+   padding:0px;
+  }
+  /* Home Page Customization */
 header {
   flex-wrap: wrap;
 }
@@ -240,23 +441,115 @@ padding-left:0px;
 display:flex;
 justify-content: center;
 }
+.home_img {
+  width: 70%;
+}
 
 .logo {
+  width: 50%;
 margin-left: 0;
 }
 
 .header_center {
-font-size: 20pt;
 width:100%;
 text-align: center;
 padding-top:20px;
-}
-.navbar a{
-font-size: 20pt;
 }
 
 .contact {
 font-size: 20pt;
 width:30%;
+}
+.portfolio_grid {
+    display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: space-between;
+}
+.portfolio_img {
+  display: block;
+  margin: auto;
+  width: 75%;
+  display: block;
+  padding: 10px;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: 15pt;
+  font-family: 'Merriweather' serif;
+  padding-top: 30px;
+}
+.discription {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+  font-family: 'Inter' serif;
+  text-align: center;
+  padding: 20px 40px;
+}
+.discription a {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  font-size: 16pt;
+}
+.portfolio_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    padding:5px;
+}
+.portfolio_action {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+  padding: 10px;
+  text-align: center;
+}
+
+/* about page stylization */
+.about_img {
+  width: 85%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  padding: 40px;
+}
+.about_discription {
+  padding: 30px;
+}
+
+/* form stylization */
+form {
+  padding: 30px;
+  text-align: center;
+  padding: 20px;
+    margin: 5px;
+}
+/*Organic Honey App Stylization */
+.honey-app-pic{
+  padding-top:30px;
+  width:50%;
+}
+.app-title-discription{
+  display: flex;
+  margin: auto;
+  text-align: center;
+  padding:40px;
+  padding-bottom: 60px;
+}
+.app-discription{
+  padding-top: 15px;
+  padding-bottom: 60px;
+  padding:30px;
+  text-align: center;
+}
+.honey-app-vid{
+  width:85%;
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 }
